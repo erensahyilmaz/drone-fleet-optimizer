@@ -14,7 +14,7 @@ class Drone:
         self.carrying_weight=0.0
         self.assigned_deliveries=[] #Teslimat ID'leri
         self.charging = False
-        self.charge_time_remaining = 0  # şarjın tamamlanmasına kalan süre (örneğin dakika veya saniye)
+        self.charge_time_remaining = 0  # şarjın tamamlanmasına kalan süre 
     def update(self, time_passed: float):
         """
         time_passed: geçen süre (örneğin dakika cinsinden)
@@ -24,7 +24,7 @@ class Drone:
         - Uçuyorsa, batarya tüketimini azaltır.
         """
 
-        consumption_rate = 10  # Örnek: birim zamanda batarya tüketim oranı (bunu sen senaryona göre ayarla)
+        consumption_rate = 10  # Birim zamanda batarya tüketim oranı 
         threshold = 500        # Batarya kritik eşiği (örn: 500 birim altında şarja gitmeli)
 
         if self.charging:
