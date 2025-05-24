@@ -62,11 +62,3 @@ def save_dataset_to_txt(drones, deliveries, zones, file_path="data/dataset.txt")
             coords_str = ";".join(f"{x}:{y}" for x, y in z['coordinates'])
             f.write(f"{z['id']},{coords_str},{z['active_time'][0].strftime('%H:%M')},{z['active_time'][1].strftime('%H:%M')}\n")
 
-
-if __name__ == "__main__":
-    drones = generate_drones(5)
-    deliveries = generate_deliveries(20)
-    zones = generate_no_fly_zones(2)
-
-    save_dataset_to_txt(drones, deliveries, zones)
-    print("✅ Veri başarıyla 'data/dataset.txt' dosyasına kaydedildi.")
