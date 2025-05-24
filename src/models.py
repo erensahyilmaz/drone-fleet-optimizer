@@ -14,7 +14,16 @@ class Drone:
         self.carrying_weight=0.0
         self.assigned_deliveries=[] #Teslimat ID'leri
         self.charging = False
-        self.charge_time_remaining = 0  # şarjın tamamlanmasına kalan süre 
+        self.charge_time_remaining = 0  # şarjın tamamlanmasına kalan süre     
+    def go_to_charge(self):
+        """
+        Drone'u şarj moduna geçirir.
+        Şarj süresi burada sabit veya hesaplanabilir.
+        """
+        self.charging = True
+        self.charge_time_remaining = 60  # Örnek: 60 dakika şarj süresi
+        print(f"Drone {self.id} şarja gidiyor. Şarj süresi: {self.charge_time_remaining} dakika")
+
     def update(self, time_passed: float):
         """
         time_passed: geçen süre (örneğin dakika cinsinden)
