@@ -62,9 +62,4 @@ def load_dataset(file_path="data/dataset.txt"):
                 )
                 no_fly_zones.append(zone)
     return drones, deliveries, no_fly_zones
-if __name__ == "__main__":
-    drones, deliveries, zones = load_dataset()
-    print("✅ Dataset başarıyla yüklendi.")
-    print(f"Drone sayısı: {len(drones)}")
-    print(f"Teslimat sayısı: {len(deliveries)}")
-    print(f"No-fly zone sayısı: {len(zones)}")
+
