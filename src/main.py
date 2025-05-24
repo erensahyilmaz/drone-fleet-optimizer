@@ -20,15 +20,15 @@ def main():
     print(f"No-fly zone sayısı: {len(zones_loaded)}")
 
     print("Drones:")
-    for d in drones:
+    for d in drones_loaded:
         print(d)  # __repr__ metodu detaylı yazdıracak
 
     print("\nDeliveries:")
-    for dp in deliveries:
+    for dp in deliveries_loaded:
         print(dp)
 
     print("\nNo-Fly Zones:")
-    for zone in zones:
+    for zone in zones_loaded:
         print(zone)
 
 if __name__ == "__main__":
