@@ -86,6 +86,10 @@ Colab ortamında özel bir kurulum gerekmemektedir.
 
 ---
 
+## 🌐 Google Colab Bağlantıları
+
+- ✔️ https://colab.research.google.com/drive/1bftxnmM-SsSEeiSm7DLs04CEf-QSJg7a?usp=sharing
+---
 
 ## 📄 Lisans
 
